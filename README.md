@@ -1,0 +1,3 @@
+hey all!!,i am yokesh I have done this project with mysql database.i have created a db and tables which will store details about studesnts.in login page click the student login if you are student or else click admin login to get the admin login .
+The login page has two types,one is for student and next one is for admin .,the system will verify the entered username and password ,whether it is correct or no...if it is correct then will move to next page else will display 
+error message in the same page.When the student logged in they can see the details about them.Details like attendance,result,library,fee etc.Admin can able to change the details of student #student-portal-using-db
