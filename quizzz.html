@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Quiz</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(rgba(0, 255, 229, 0.647),hsl(0, 15%, 90%));
+        background-repeat: no-repeat;
+    }
+    .quiz-container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    p{
+        color:red;
+    }
+</style>
+</head>
+<body>
+    <img src="th.jpg" class="hello"><br>
+    <div class="quiz-container">
+        <h1>Java Quiz</h1>
+        <form id="quizForm">
+            <p>1. What is the correct way to declare a variable in Java?</p>
+            <input type="radio" name="q1" value="int"> int x;<br>
+            <input type="radio" name="q1" value="var"> var x;<br>
+            <input type="radio" name="q1" value="String"> String x;<br><br>
+
+            <p>2. What is the output of the following Java code?<br>
+                <code>
+                    public class Main {<br>
+                        public static void main(String[] args) {<br>
+                            int x = 5;<br>
+                            System.out.println(x++);<br>
+                        }<br>
+                    }<br>
+                </code>
+            </p>
+            <input type="radio" name="q2" value="5"> 5<br>
+            <input type="radio" name="q2" value="6"> 6<br>
+            <input type="radio" name="q2" value="4"> 4<br><br>
+
+            <p>3. Which keyword is used to define a constant in Java?</p>
+            <input type="radio" name="q3" value="constant"> constant<br>
+            <input type="radio" name="q3" value="static"> static<br>
+            <input type="radio" name="q3" value="final"> final<br><br>
+
+            <p>4. What is the correct way to create an object of a class in Java?</p>
+            <input type="radio" name="q4" value="MyClass obj = new MyClass();"> MyClass obj = new MyClass();<br>
+            <input type="radio" name="q4" value="new MyClass obj();"> new MyClass obj();<br>
+            <input type="radio" name="q4" value="MyClass obj();"> MyClass obj();<br><br>
+
+            <p>5. Which of the following is a valid method declaration in an interface in Java?</p>
+            <input type="radio" name="q5" value="void method();"> void method();<br>
+            <input type="radio" name="q5" value="int method();"> int method();<br>
+            <input type="radio" name="q5" value="public void method();"> public void method();<br><br>
+
+            <button type="button" onclick="calculateScore()">Submit</button>
+            <button ><a href="quizz.html">BACK</a> </button>
+        </form>
+    </div>
+</body>
+<script>
+    function calculateScore() {
+        var score = 0;
+        var answers = ["int", "5", "final", "MyClass obj = new MyClass();", "void method();"];
+        var form = document.getElementById("quizForm");
+        for (var i = 1; i <= 5; i++) {
+            var selectedAnswer = form.elements["q" + i].value;
+            if (selectedAnswer === answers[i - 1]) {
+                score++;
+            }
+        }
+        alert("Your score is: " + score + "/5");
+        localStorage.setItem("quizScore", score);
+    }
+</script>
+</html>

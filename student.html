@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <button class="b"><a href="logout.php">Logout</a></button>
+    <h1>Student Information</h1>
+    <center>
+        <img src="th.jpg" alt="Student Image">
+        <form action="studentt.php" method="get">
+            <table>
+                <tr>
+                    <td>Enter student name</td>
+                    <td><input type="text" name="name"></td>
+                    <td>Enter student login password</td>
+                    <td><input type="text" name="pass"></td>
+                    <td>Enter student ID</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>Enter student usn</td>
+                    <td><input type="text" name="usn"></td>
+                    <td>Enter student father name:</td>
+                    <td><input type="text" name="fathername"></td>
+                    <td>Enter student Semester:</td>
+                    <td><input type="text" name="semm"></td>
+                </tr>
+                <tr>
+                    <td>Enter student CGPA:</td>
+                    <td><input type="text" name="cgpa"></td>
+                    <td>Enter student backlog count:</td>
+                    <td><input type="text" name="back"></td>
+                    <td>Enter student MOBILE:</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Enter student grade in mathematics:</td>
+                    <td><input type="text" name="sub1"></td>
+                    <td>Enter student grade in microcontroller:</td>
+                    <td><input type="text" name="sub2"></td>
+                    <td>Enter student grade in computer organization and architecture:</td>
+                    <td><input type="text" name="sub3"></td>
+                </tr>
+                <tr>
+                    <td>Enter student grade in Python programming:</td>
+                    <td><input type="text" name="sub4"></td>
+                    <td>Enter student grade in Design analysis and algorithm:</td>
+                    <td><input type="text" name="sub5"></td>
+                    <td>Enter student grade in Indian constitution:</td>
+                    <td><input type="text" name="sub6"></td>
+                </tr>
+                <tr>
+                    <td>Enter student grade in C#:</td>
+                    <td><input type="text" name="sub7"></td>
+                    <td>Enter student book fees:</td>
+                    <td><input type="text" name="f1"></td>
+                    <td>Enter student tuition fees:</td>
+                    <td><input type="text" name="f2"></td>
+                </tr>
+                <tr>
+                    <td>Enter sem fees:</td>
+                    <td><input type="text" name="f3"></td>
+                    <td>Enter student other fees:</td>
+                    <td><input type="text" name="f4"></td>
+                    <td>Enter student total fees:</td>
+                    <td><input type="text" name="f5"></td>
+                </tr>
+                <tr>
+                    <td>Enter Attendance in Software engineering:</td>
+                    <td><input type="text" name="s1"></td>
+                    <td>Enter Attendance in theory of computations:</td>
+                    <td><input type="text" name="s2"></td>
+                    <td>Enter Attendance in Database management system:</td>
+                    <td><input type="text" name="s3"></td>
+                </tr>
+                <tr>
+                    <td>Enter Attendance in Web programming:</td>
+                    <td><input type="text" name="s4"></td>
+                    <td>Enter Attendance in Environmental studies:</td>
+                    <td><input type="text" name="s6"></td>
+                    <td>Enter Attendance in Research methodology:</td>
+                    <td><input type="text" name="s7"></td>
+                </tr>
+                <tr>
+                    <td>Enter Attendance in universal human values:</td>
+                    <td><input type="text" name="s8"></td>
+                    <td>Enter Attendance in Artificial intelligence:</td>
+                    <td><input type="text" name="s5"></td>
+                    <td>Enter Book student borrowed (if any):</td>
+                    <td><input type="text" name="L1"></td>
+                </tr>
+                <tr>
+                    <td>Enter book id:</td>
+                    <td><input type="text" name="L2"></td>
+                    <td>Enter Date of issued:</td>
+                    <td><input type="text" name="L3"></td>
+                    <td>Enter Date of due:</td>
+                    <td><input type="text" name="L4"></td>
+                </tr>
+                <tr>
+                    <td>Enter Fine (if applicable):</td>
+                    <td><input type="text" name="L5"></td>
+                    <td colspan="4">
+                        <input type="submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    <button class="b"><a href="home3.php">BACK</a></button></head></html>
+</body>
+</html>
